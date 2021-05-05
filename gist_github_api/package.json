@@ -1,0 +1,25 @@
+{
+  "name": "gist_github_api",
+  "version": "1.0.0",
+  "description": "Wrapper for Github REST API",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "cross-env DEBUG=gist-github-api:* && node app.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^18.5.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "postgres": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.1",
+    "typescript": "^4.2.4"
+  }
+}
