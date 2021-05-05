@@ -12,11 +12,11 @@ Clone the repository.
 git clone https://github.com/mgentry612/gists_graphql_postgres_react.git ./<your_dir>/
 ```
 
-cd into your directory run the following to pull and run the postgres container, then initialize the database and table, next install the graphql and react APIs.
+cd into your directory run the following to pull and run the postgres container, then initialize the database and table, next install the graphql and react APIs. Yes, there is a dummy password there, please don't store sensitive data in here.
 
 ```bash
 docker pull postgres
-docker run -d --name gist-postgres -e POSTGRES_PASSWORD='Pass2020!' -p 5432:5432 postgres
+docker run -d --name gist-postgres -e POSTGRES_PASSWORD=Pass2020! -p 5432:5432 postgres
 node ./gist_github_api/utilities/init_postgres.js
 npm --prefix ./gist_github_api/ install
 npm --prefix ./gist_react_app/ install
