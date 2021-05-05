@@ -15,7 +15,11 @@ git clone https://github.com/mgentry612/gists_graphql_postgres_react.git ./<your
 cd into your directory and install the project dependencies.
 
 ```bash
-bash init.sh
+docker pull postgres
+docker run -d --name gist-postgres -e POSTGRES_PASSWORD='Pass2020!' -p 5432:5432 postgres
+npm --prefix ./gist_github_api/ install
+npm --prefix ./gist_react_app/ install
+node ./gist_github_api/utilities/init_postgres.js
 ```
 Build the project.
 
