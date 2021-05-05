@@ -27,13 +27,13 @@ node ./utilities/init_postgres.js
 
 ## Usage
 
-Run the GraphQL Server
+Run the GraphQL Server from the ./gist_github_api directory
 ```node
-npm start --prefix ./gist_github_api/
+npm start
 ```
-Open another terminal and run the following from your root directory
+Open another terminal and run the following from the ./gist_react_app
 ```node
-npm start --prefix ./gist_react_app/
+npm start
 ```
 ## Run Test Suite
 Could be coming soon, see https://github.com/mgentry612/in_memory_db for examples of Jest tests integrated into the controller layer.
