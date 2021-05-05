@@ -5,6 +5,7 @@ Gists is an API that allows users to retrieve public Github gists and favorite t
 ## Installation
 
 Install the latest node.js and npm versions from https://nodejs.org/en/download/.
+Install the latest docker.
 
 Clone the repository.
 
